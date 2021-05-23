@@ -70,7 +70,7 @@ public:
 		if ((event.EventType == EET_KEY_INPUT_EVENT) &&
 				event.KeyInput.PressedDown)
 		{
-			if (event.KeyInput.Key == KEY_F9)
+			if (event.KeyInput.Key == KEY_KEY_0)
 			{
 				video::IImage* image = Device->getVideoDriver()->createScreenShot();
 				if (image)

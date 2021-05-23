@@ -49,17 +49,16 @@ int main()
 	too slow to draw a huge Quake 3 map, but just for the fun of it, we make
 	this decision possible, too.
 	*/
-
+    int flag = 1;
+    
 	// ask user for driver
-	video::E_DRIVER_TYPE driverType=driverChoiceConsole(true);
-	if (driverType==video::EDT_COUNT)
-		return 1;
+	video::E_DRIVER_TYPE driverType=irr::video::EDT_OPENGL;
 
 	// create device and exit if creation failed
 
 	IrrlichtDevice *device =
 		createDevice(driverType, core::dimension2d<u32>(640, 480));
-
+    
 	if (device == 0)
 		return 1; // could not create selected driver.
 
@@ -147,15 +146,23 @@ int main()
 	active.
 	*/
 	int lastFPS = -1;
-
+    
 	while(device->run())
 	{
 		if (device->isWindowActive())
 		{
 			driver->beginScene(video::ECBF_COLOR | video::ECBF_DEPTH, video::SColor(255,200,200,200));
 			smgr->drawAll();
+            
+                video::IImage* image = device->getVideoDriver()->createScreenShot();
+                if(image){
+                    //device->getVideoDriver()->writeImageToFile(image, "/Users/songtingyu/Desktop/test.png");
+                    image->drop();
+                    //printf("I don't know what happend.\n");
+                }
+            
 			driver->endScene();
-
+            
 			int fps = driver->getFPS();
 
 			if (lastFPS != fps)
@@ -168,6 +175,7 @@ int main()
 				device->setWindowCaption(str.c_str());
 				lastFPS = fps;
 			}
+            
 		}
 		else
 			device->yield();
