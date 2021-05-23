@@ -7,10 +7,12 @@ Supporting real-time vedio transfer.
 sudo apt install libxxf86vm-dev
 sudo apt install libgl1-mesa-dev libglu1-mesa-dev
 ```
-
 2. MacOSX
 Using Xcode follow readme.txt is okay.
 
-### Notes
+### Tasks
+- [ ] Form video streaming locally  H.264
+- [ ] Transfer HLS/WebRTC/rtmp 
 
+### Notes
 1.Code Struct of Irrlicht
