@@ -21,11 +21,14 @@ extern "C"
 #include<libswscale/swscale.h>
 };
 
+#include <iostream>
+
 namespace irr
 {
 namespace video
 {
 
+// TODO: window width and height unknown
 class IEncoder{
 private:
     int frame_count;
@@ -40,8 +43,12 @@ private:
     AVPacket* pkt;
     AVFrame* frameYUV;
     SwsContext* swsContext;
+    int SCR_WIDTH;
+    int SCR_HEIGHT;
+    int inlinesize[8] = {0};
+    bool dump_video_option ;
 public:
-    IEncoder(){
+    IEncoder(const core::dimension2d<u32>& size){
         ofctx = nullptr;
         stream = nullptr;
         outputFormat = nullptr;
@@ -52,6 +59,10 @@ public:
         swsContext = nullptr;
         out_filename = "out.h264";
         frame_count = 0;
+        SCR_WIDTH = size.Width;
+        SCR_HEIGHT = size.Height;
+        inlinesize[0] = SCR_WIDTH*3;
+        dump_video_option = false;
     }
 
     void Init()

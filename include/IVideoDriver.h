@@ -19,6 +19,7 @@
 #include "EDriverFeatures.h"
 #include "SExposedVideoData.h"
 #include "SOverrideMaterial.h"
+#include "IEncoder.h"
 
 namespace irr
 {
@@ -48,7 +49,7 @@ namespace video
 	class IMaterialRenderer;
 	class IGPUProgrammingServices;
 	class IRenderTarget;
-
+    class IEncoder;
 	//! enumeration for geometry transformation states
 	enum E_TRANSFORMATION_STATE
 	{
