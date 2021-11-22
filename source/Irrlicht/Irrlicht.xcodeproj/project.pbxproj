@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C9AF96D274B373600FDCA73 /* IEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9AF96C274B373600FDCA73 /* IEncoder.h */; };
+		2C9AF978274B3E3700FDCA73 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9AF96F274B3E3700FDCA73 /* libavfilter.a */; };
+		2C9AF979274B3E3700FDCA73 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9AF970274B3E3700FDCA73 /* libswresample.a */; };
+		2C9AF97A274B3E3700FDCA73 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9AF971274B3E3700FDCA73 /* libavdevice.a */; };
+		2C9AF97B274B3E3700FDCA73 /* libavresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9AF972274B3E3700FDCA73 /* libavresample.a */; };
+		2C9AF97C274B3E3700FDCA73 /* libpostproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9AF973274B3E3700FDCA73 /* libpostproc.a */; };
+		2C9AF97D274B3E3700FDCA73 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9AF974274B3E3700FDCA73 /* libavformat.a */; };
+		2C9AF97E274B3E3700FDCA73 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9AF975274B3E3700FDCA73 /* libavcodec.a */; };
+		2C9AF97F274B3E3700FDCA73 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9AF976274B3E3700FDCA73 /* libswscale.a */; };
+		2C9AF980274B3E3700FDCA73 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9AF977274B3E3700FDCA73 /* libavutil.a */; };
 		5E34C9F91B7F6EBF00F212E8 /* CDefaultGUIElementFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E34C7E21B7F50DE00F212E8 /* CDefaultGUIElementFactory.cpp */; };
 		5E34C9FB1B7F6EBF00F212E8 /* CGUIButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E34C7A91B7F50A900F212E8 /* CGUIButton.cpp */; };
 		5E34C9FD1B7F6EBF00F212E8 /* CGUICheckBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E34C7AB1B7F50A900F212E8 /* CGUICheckBox.cpp */; };
@@ -311,6 +321,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C9AF96C274B373600FDCA73 /* IEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IEncoder.h; sourceTree = "<group>"; };
+		2C9AF96F274B3E3700FDCA73 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavfilter.a; sourceTree = "<group>"; };
+		2C9AF970274B3E3700FDCA73 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libswresample.a; sourceTree = "<group>"; };
+		2C9AF971274B3E3700FDCA73 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavdevice.a; sourceTree = "<group>"; };
+		2C9AF972274B3E3700FDCA73 /* libavresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavresample.a; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavresample.a; sourceTree = "<group>"; };
+		2C9AF973274B3E3700FDCA73 /* libpostproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpostproc.a; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libpostproc.a; sourceTree = "<group>"; };
+		2C9AF974274B3E3700FDCA73 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavformat.a; sourceTree = "<group>"; };
+		2C9AF975274B3E3700FDCA73 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavcodec.a; sourceTree = "<group>"; };
+		2C9AF976274B3E3700FDCA73 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libswscale.a; sourceTree = "<group>"; };
+		2C9AF977274B3E3700FDCA73 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavutil.a; sourceTree = "<group>"; };
 		5E34C6E21B7F4AFB00F212E8 /* aabbox3d.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = aabbox3d.h; path = ../../include/aabbox3d.h; sourceTree = "<group>"; };
 		5E34C6E31B7F4AFB00F212E8 /* CDynamicMeshBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CDynamicMeshBuffer.h; path = ../../include/CDynamicMeshBuffer.h; sourceTree = "<group>"; };
 		5E34C6E41B7F4AFB00F212E8 /* CIndexBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CIndexBuffer.h; path = ../../include/CIndexBuffer.h; sourceTree = "<group>"; };
@@ -1041,18 +1061,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9AF978274B3E3700FDCA73 /* libavfilter.a in Frameworks */,
+				2C9AF979274B3E3700FDCA73 /* libswresample.a in Frameworks */,
+				2C9AF97A274B3E3700FDCA73 /* libavdevice.a in Frameworks */,
+				2C9AF97B274B3E3700FDCA73 /* libavresample.a in Frameworks */,
+				2C9AF97C274B3E3700FDCA73 /* libpostproc.a in Frameworks */,
+				2C9AF97D274B3E3700FDCA73 /* libavformat.a in Frameworks */,
+				2C9AF97E274B3E3700FDCA73 /* libavcodec.a in Frameworks */,
+				2C9AF97F274B3E3700FDCA73 /* libswscale.a in Frameworks */,
+				2C9AF980274B3E3700FDCA73 /* libavutil.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C9AF96E274B3E3700FDCA73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C9AF975274B3E3700FDCA73 /* libavcodec.a */,
+				2C9AF971274B3E3700FDCA73 /* libavdevice.a */,
+				2C9AF96F274B3E3700FDCA73 /* libavfilter.a */,
+				2C9AF974274B3E3700FDCA73 /* libavformat.a */,
+				2C9AF972274B3E3700FDCA73 /* libavresample.a */,
+				2C9AF977274B3E3700FDCA73 /* libavutil.a */,
+				2C9AF973274B3E3700FDCA73 /* libpostproc.a */,
+				2C9AF970274B3E3700FDCA73 /* libswresample.a */,
+				2C9AF976274B3E3700FDCA73 /* libswscale.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5E34C6D81B7F4A0C00F212E8 = {
 			isa = PBXGroup;
 			children = (
 				5E34C6DF1B7F4AB500F212E8 /* include */,
 				5E34C6E01B7F4ABD00F212E8 /* Irrlicht */,
 				5E34C9F41B7F6E3400F212E8 /* Products */,
+				2C9AF96E274B3E3700FDCA73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1263,6 +1309,7 @@
 				5E34C7901B7F4AFC00F212E8 /* SMaterial.h */,
 				5E34C7911B7F4AFC00F212E8 /* SMaterialLayer.h */,
 				5E34C7991B7F4AFC00F212E8 /* SVertexIndex.h */,
+				2C9AF96C274B373600FDCA73 /* IEncoder.h */,
 			);
 			name = video;
 			sourceTree = "<group>";
@@ -2064,6 +2111,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E8570BD1B7F9AC400B267D2 /* CIrrDeviceConsole.h in Headers */,
+				2C9AF96D274B373600FDCA73 /* IEncoder.h in Headers */,
 				5E7908961C10EEC000DFE7FE /* COpenGLCommon.h in Headers */,
 				5E7908951C10EEC000DFE7FE /* COpenGLCacheHandler.h in Headers */,
 			);
@@ -2107,6 +2155,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 5E34C6D81B7F4A0C00F212E8;
@@ -2484,7 +2533,11 @@
 				GCC_WARN_UNUSED_FUNCTION = NO;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../include";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../include",
+					/usr/local/Cellar/ffmpeg/4.4_2/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/ffmpeg/4.4_2/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2532,7 +2585,11 @@
 				GCC_WARN_UNUSED_FUNCTION = NO;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../include";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../include",
+					/usr/local/Cellar/ffmpeg/4.4_2/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/ffmpeg/4.4_2/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CPLUSPLUSFLAGS = (
