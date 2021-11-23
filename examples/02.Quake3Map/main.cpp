@@ -146,7 +146,7 @@ int main()
 	active.
 	*/
 	int lastFPS = -1;
-    
+    driver->createEncoder();
 	while(device->run())
 	{
 		if (device->isWindowActive())
@@ -173,7 +173,7 @@ int main()
 		else
 			device->yield();
 	}
-
+    driver->destroyEncoder();
 	/*
 	In the end, delete the Irrlicht device.
 	*/

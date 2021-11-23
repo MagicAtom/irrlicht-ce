@@ -79,7 +79,8 @@ bool COpenGLDriver::initDriver()
 #if defined(_IRR_COMPILE_WITH_WINDOWS_DEVICE_) || defined(_IRR_COMPILE_WITH_X11_DEVICE_)
 	extGlSwapInterval(Params.Vsync ? 1 : 0);
 #endif
-
+    
+    encoder = nullptr;
 	return true;
 }
 

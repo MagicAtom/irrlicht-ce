@@ -3,63 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C930228274BEFFF004902B8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C93021C274BEECA004902B8 /* AudioToolbox.framework */; platformFilter = maccatalyst; };
-		2C93022F274BF1CF004902B8 /* libIrrlicht.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E34CC781B7F90A000F212E8 /* libIrrlicht.a */; };
-		2C930230274BF1FE004902B8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C930219274BEE87004902B8 /* CoreMedia.framework */; platformFilter = maccatalyst; };
-		2C930231274BF21E004902B8 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C930212274BEE43004902B8 /* VideoToolbox.framework */; platformFilter = maccatalyst; };
-		2C93023C274BF365004902B8 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C93023B274BF365004902B8 /* CoreServices.framework */; platformFilter = maccatalyst; };
-		2C93023E274BF370004902B8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C93023D274BF370004902B8 /* CoreFoundation.framework */; platformFilter = maccatalyst; };
-		2C930240274BF378004902B8 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C93023F274BF378004902B8 /* AudioUnit.framework */; platformFilter = maccatalyst; };
-		2C930242274BF382004902B8 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C930241274BF382004902B8 /* CoreAudio.framework */; platformFilter = maccatalyst; };
-		2C930256274C5BB8004902B8 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C93022B274BF07F004902B8 /* libbz2.tbd */; platformFilter = maccatalyst; };
-		2C930257274C5BC1004902B8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C930255274C5BAA004902B8 /* libz.tbd */; platformFilter = maccatalyst; };
-		2C930259274C5BCC004902B8 /* VideoDecodeAcceleration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C930258274C5BCC004902B8 /* VideoDecodeAcceleration.framework */; };
-		2C93025A274C5BDA004902B8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C930216274BEE70004902B8 /* Security.framework */; platformFilter = maccatalyst; };
-		2C93025B274C5BF9004902B8 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C93023A274BF2D6004902B8 /* libiconv.tbd */; platformFilter = maccatalyst; };
-		2C93025C274C5C37004902B8 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C930204274BE93D004902B8 /* libavcodec.a */; };
-		2C93025D274C5C38004902B8 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C930208274BE93D004902B8 /* libavdevice.a */; };
-		2C93025E274C5C38004902B8 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C930206274BE93D004902B8 /* libavfilter.a */; };
-		2C93025F274C5C38004902B8 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C930201274BE93D004902B8 /* libavformat.a */; };
-		2C930260274C5C38004902B8 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C930207274BE93D004902B8 /* libavutil.a */; };
-		2C930261274C5C38004902B8 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C930205274BE93D004902B8 /* libswscale.a */; };
+		2C4557D0274D0983004A5006 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8570B01B7F99F500B267D2 /* Cocoa.framework */; };
+		2C4557D1274D0993004A5006 /* libIrrlicht.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E34CC781B7F90A000F212E8 /* libIrrlicht.a */; };
+		2C4557D8274D09BA004A5006 /* libavcodec.58.134.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4557D2274D09BA004A5006 /* libavcodec.58.134.100.dylib */; };
+		2C4557D9274D09BA004A5006 /* libavformat.58.76.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4557D3274D09BA004A5006 /* libavformat.58.76.100.dylib */; };
+		2C4557DA274D09BA004A5006 /* libavutil.56.70.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4557D4274D09BA004A5006 /* libavutil.56.70.100.dylib */; };
+		2C4557DB274D09BA004A5006 /* libswscale.5.9.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4557D5274D09BA004A5006 /* libswscale.5.9.100.dylib */; };
+		2C4557DC274D09BA004A5006 /* libavdevice.58.13.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4557D6274D09BA004A5006 /* libavdevice.58.13.100.dylib */; };
+		2C4557DD274D09BA004A5006 /* libavfilter.7.110.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4557D7274D09BA004A5006 /* libavfilter.7.110.100.dylib */; };
 		5E34CC751B7F8EEF00F212E8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E34CC741B7F8EEF00F212E8 /* main.cpp */; };
-		5E8570B61B7F9A3200B267D2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8570B01B7F99F500B267D2 /* Cocoa.framework */; };
 		5E8570B71B7F9A3200B267D2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8570B41B7F9A0700B267D2 /* IOKit.framework */; };
 		5E8570B81B7F9A3200B267D2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8570B21B7F99FE00B267D2 /* OpenGL.framework */; };
 		5E8570BF1B7F9D3A00B267D2 /* media in Resources */ = {isa = PBXBuildFile; fileRef = 5E8570BE1B7F9D3A00B267D2 /* media */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C930201274BE93D004902B8 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavformat.a; sourceTree = "<group>"; };
-		2C930204274BE93D004902B8 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavcodec.a; sourceTree = "<group>"; };
-		2C930205274BE93D004902B8 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libswscale.a; sourceTree = "<group>"; };
-		2C930206274BE93D004902B8 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavfilter.a; sourceTree = "<group>"; };
-		2C930207274BE93D004902B8 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavutil.a; sourceTree = "<group>"; };
-		2C930208274BE93D004902B8 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavdevice.a; sourceTree = "<group>"; };
-		2C93020E274BEE25004902B8 /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
-		2C93020F274BEE25004902B8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		2C930212274BEE43004902B8 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
-		2C930213274BEE43004902B8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		2C930216274BEE70004902B8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		2C930218274BEE87004902B8 /* MediaToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaToolbox.framework; path = System/Library/Frameworks/MediaToolbox.framework; sourceTree = SDKROOT; };
-		2C930219274BEE87004902B8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		2C93021C274BEECA004902B8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		2C93021E274BEED2004902B8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2C930221274BEEE6004902B8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		2C930225274BEEFB004902B8 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		2C930227274BEF20004902B8 /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
-		2C93022B274BF07F004902B8 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
-		2C93023A274BF2D6004902B8 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
-		2C93023B274BF365004902B8 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
-		2C93023D274BF370004902B8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		2C93023F274BF378004902B8 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
-		2C930241274BF382004902B8 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		2C930255274C5BAA004902B8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		2C930258274C5BCC004902B8 /* VideoDecodeAcceleration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoDecodeAcceleration.framework; path = System/Library/Frameworks/VideoDecodeAcceleration.framework; sourceTree = SDKROOT; };
+		2C4557D2274D09BA004A5006 /* libavcodec.58.134.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.58.134.100.dylib; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavcodec.58.134.100.dylib; sourceTree = "<group>"; };
+		2C4557D3274D09BA004A5006 /* libavformat.58.76.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.58.76.100.dylib; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavformat.58.76.100.dylib; sourceTree = "<group>"; };
+		2C4557D4274D09BA004A5006 /* libavutil.56.70.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.56.70.100.dylib; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavutil.56.70.100.dylib; sourceTree = "<group>"; };
+		2C4557D5274D09BA004A5006 /* libswscale.5.9.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.5.9.100.dylib; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libswscale.5.9.100.dylib; sourceTree = "<group>"; };
+		2C4557D6274D09BA004A5006 /* libavdevice.58.13.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavdevice.58.13.100.dylib; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavdevice.58.13.100.dylib; sourceTree = "<group>"; };
+		2C4557D7274D09BA004A5006 /* libavfilter.7.110.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavfilter.7.110.100.dylib; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavfilter.7.110.100.dylib; sourceTree = "<group>"; };
 		5E34CC511B7F8E6E00F212E8 /* 02.Quake3Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 02.Quake3Map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E34CC741B7F8EEF00F212E8 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5E34CC781B7F90A000F212E8 /* libIrrlicht.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIrrlicht.a; path = ../../lib/OSX/libIrrlicht.a; sourceTree = "<group>"; };
@@ -74,28 +42,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C93025E274C5C38004902B8 /* libavfilter.a in Frameworks */,
-				2C930230274BF1FE004902B8 /* CoreMedia.framework in Frameworks */,
-				2C930261274C5C38004902B8 /* libswscale.a in Frameworks */,
-				2C93025A274C5BDA004902B8 /* Security.framework in Frameworks */,
-				2C93025F274C5C38004902B8 /* libavformat.a in Frameworks */,
-				2C930231274BF21E004902B8 /* VideoToolbox.framework in Frameworks */,
-				2C93023E274BF370004902B8 /* CoreFoundation.framework in Frameworks */,
-				2C93025D274C5C38004902B8 /* libavdevice.a in Frameworks */,
-				2C930256274C5BB8004902B8 /* libbz2.tbd in Frameworks */,
-				2C930257274C5BC1004902B8 /* libz.tbd in Frameworks */,
-				5E8570B61B7F9A3200B267D2 /* Cocoa.framework in Frameworks */,
-				2C93022F274BF1CF004902B8 /* libIrrlicht.a in Frameworks */,
-				2C930240274BF378004902B8 /* AudioUnit.framework in Frameworks */,
-				2C930242274BF382004902B8 /* CoreAudio.framework in Frameworks */,
-				2C93025B274C5BF9004902B8 /* libiconv.tbd in Frameworks */,
+				2C4557D8274D09BA004A5006 /* libavcodec.58.134.100.dylib in Frameworks */,
+				2C4557D9274D09BA004A5006 /* libavformat.58.76.100.dylib in Frameworks */,
+				2C4557DA274D09BA004A5006 /* libavutil.56.70.100.dylib in Frameworks */,
+				2C4557DB274D09BA004A5006 /* libswscale.5.9.100.dylib in Frameworks */,
+				2C4557DC274D09BA004A5006 /* libavdevice.58.13.100.dylib in Frameworks */,
+				2C4557DD274D09BA004A5006 /* libavfilter.7.110.100.dylib in Frameworks */,
+				2C4557D1274D0993004A5006 /* libIrrlicht.a in Frameworks */,
+				2C4557D0274D0983004A5006 /* Cocoa.framework in Frameworks */,
 				5E8570B71B7F9A3200B267D2 /* IOKit.framework in Frameworks */,
-				2C930259274C5BCC004902B8 /* VideoDecodeAcceleration.framework in Frameworks */,
-				2C930228274BEFFF004902B8 /* AudioToolbox.framework in Frameworks */,
-				2C93025C274C5C37004902B8 /* libavcodec.a in Frameworks */,
-				2C930260274C5C38004902B8 /* libavutil.a in Frameworks */,
 				5E8570B81B7F9A3200B267D2 /* OpenGL.framework in Frameworks */,
-				2C93023C274BF365004902B8 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,32 +61,12 @@
 		2C930200274BE93D004902B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2C930258274C5BCC004902B8 /* VideoDecodeAcceleration.framework */,
-				2C930255274C5BAA004902B8 /* libz.tbd */,
-				2C930241274BF382004902B8 /* CoreAudio.framework */,
-				2C93023F274BF378004902B8 /* AudioUnit.framework */,
-				2C93023D274BF370004902B8 /* CoreFoundation.framework */,
-				2C93023B274BF365004902B8 /* CoreServices.framework */,
-				2C93023A274BF2D6004902B8 /* libiconv.tbd */,
-				2C93022B274BF07F004902B8 /* libbz2.tbd */,
-				2C930227274BEF20004902B8 /* libbz2.1.0.tbd */,
-				2C930225274BEEFB004902B8 /* Accelerate.framework */,
-				2C930221274BEEE6004902B8 /* QuartzCore.framework */,
-				2C93021E274BEED2004902B8 /* CoreGraphics.framework */,
-				2C93021C274BEECA004902B8 /* AudioToolbox.framework */,
-				2C930219274BEE87004902B8 /* CoreMedia.framework */,
-				2C930218274BEE87004902B8 /* MediaToolbox.framework */,
-				2C930216274BEE70004902B8 /* Security.framework */,
-				2C930213274BEE43004902B8 /* CoreVideo.framework */,
-				2C930212274BEE43004902B8 /* VideoToolbox.framework */,
-				2C93020E274BEE25004902B8 /* AVFAudio.framework */,
-				2C93020F274BEE25004902B8 /* AVFoundation.framework */,
-				2C930204274BE93D004902B8 /* libavcodec.a */,
-				2C930208274BE93D004902B8 /* libavdevice.a */,
-				2C930206274BE93D004902B8 /* libavfilter.a */,
-				2C930201274BE93D004902B8 /* libavformat.a */,
-				2C930207274BE93D004902B8 /* libavutil.a */,
-				2C930205274BE93D004902B8 /* libswscale.a */,
+				2C4557D2274D09BA004A5006 /* libavcodec.58.134.100.dylib */,
+				2C4557D6274D09BA004A5006 /* libavdevice.58.13.100.dylib */,
+				2C4557D7274D09BA004A5006 /* libavfilter.7.110.100.dylib */,
+				2C4557D3274D09BA004A5006 /* libavformat.58.76.100.dylib */,
+				2C4557D4274D09BA004A5006 /* libavutil.56.70.100.dylib */,
+				2C4557D5274D09BA004A5006 /* libswscale.5.9.100.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -305,10 +241,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/../../media/info_osx.plist";
 				INSTALL_PATH = /;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SRCROOT)/../../lib/OSX",
 					/usr/local/Cellar/ffmpeg/4.4_2/include,
@@ -359,10 +292,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/../../media/info_osx.plist";
 				INSTALL_PATH = /;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SRCROOT)/../../lib/OSX",
 					/usr/local/Cellar/ffmpeg/4.4_2/include,

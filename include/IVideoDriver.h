@@ -167,7 +167,7 @@ namespace video
 	*/
 	class IVideoDriver : public virtual IReferenceCounted
 	{
-    private:
+    protected:
         IEncoder* encoder;
 	public:
 
@@ -563,23 +563,29 @@ namespace video
 		virtual bool setRenderTarget(ITexture* texture, u16 clearFlag=ECBF_COLOR|ECBF_DEPTH, SColor clearColor = SColor(255,0,0,0),
 			f32 clearDepth = 1.f, u8 clearStencil = 0) = 0;
         
+        void createEncoder(){
+            core::dimension2d<u32> screenSize = this->getScreenSize();
+            encoder = new IEncoder(screenSize);
+            encoder->Init();
+        }
+        
         //! this is a debug function to test IEncoder
         void recordScreen()
         {
             uint8_t* ret_buf;
             int ret_buf_size = 0;
             IImage* image = createScreenShot();
-            if(encoder == nullptr){
-                core::dimension2d<u32> screenSize = this->getScreenSize();
-                encoder = new IEncoder(screenSize);
-                encoder->Init();
-            }
             encoder->GenOnePkt(image->getImageData(), &ret_buf, ret_buf_size);
+            image->drop();
         }
         
         //! create a new streamer
         void publish(){
             
+        }
+        
+        void destroyEncoder(){
+            encoder->EndEncode();
         }
         
 		//! Sets a new render target.

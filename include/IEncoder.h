@@ -57,11 +57,13 @@ public:
         pkt = nullptr;
         frameYUV = nullptr;
         swsContext = nullptr;
-        out_filename = "out.h264";
+        out_filename = "quake3d.h264";
         frame_count = 0;
         SCR_WIDTH = size.Width;
         SCR_HEIGHT = size.Height;
         inlinesize[0] = SCR_WIDTH*3;
+        in_buf[0] = (uint8_t*)malloc(sizeof(uint8_t)*SCR_WIDTH*SCR_HEIGHT*3);
+        in_buf[1] = nullptr;
         dump_video_option = false;
     }
 
@@ -146,7 +148,7 @@ public:
         }
 
         fout = fopen(out_filename,"wb");
-
+        assert(fout!=NULL);
         swsContext = sws_getContext(SCR_WIDTH,SCR_HEIGHT,AV_PIX_FMT_RGB24,
                                     SCR_WIDTH,SCR_HEIGHT,AV_PIX_FMT_YUV420P,
                                     SWS_BICUBIC,NULL,NULL,NULL);
@@ -195,13 +197,11 @@ public:
 
     void DumpLocalVideo()
     {
-        static int count = 2;
         pkt->stream_index = stream->index;
         int er = av_write_frame(ofctx,pkt);
         if(er < 0){
             std::cout<<"write frame error"<<std::endl;
         }
-        if(count == 0) fclose(fout);
         fwrite(pkt->data,1,pkt->size,fout);
         //count--;
     }
