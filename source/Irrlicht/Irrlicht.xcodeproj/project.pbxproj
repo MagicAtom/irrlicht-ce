@@ -2535,7 +2535,9 @@
 				DEPLOYMENT_LOCATION = YES;
 				ENABLE_TESTABILITY = YES;
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "DEBUG=1";
+				HEADER_SEARCH_PATHS = "";
 				INSTALL_PATH = /;
+				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
@@ -2545,7 +2547,9 @@
 			buildSettings = {
 				DEPLOYMENT_LOCATION = YES;
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "NDEBUG=1";
+				HEADER_SEARCH_PATHS = "";
 				INSTALL_PATH = /;
+				LIBRARY_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -2590,7 +2594,7 @@
 					/usr/local/Cellar/ffmpeg/4.4_2/include,
 				);
 				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/ffmpeg/4.4_2/lib;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -2642,7 +2646,7 @@
 					/usr/local/Cellar/ffmpeg/4.4_2/include,
 				);
 				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/ffmpeg/4.4_2/lib;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",

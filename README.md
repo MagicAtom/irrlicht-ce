@@ -1,18 +1,39 @@
 ## Irrlicht-ce
-Supporting real-time vedio transfer.
+We add a plugin to irrlicht game engine, to make it has the functions of cloud rendering. 
 
-### Build
-1. Ubuntu 20 LTS
-```bash
-sudo apt install libxxf86vm-dev
-sudo apt install libgl1-mesa-dev libglu1-mesa-dev
-```
-2. MacOSX
-Using Xcode follow readme.txt is okay.
+### 1 Build
 
-### Tasks
-- [ ] Form video streaming locally  H.264
-- [ ] Transfer HLS/WebRTC/rtmp 
+For more details, please refer to the [BUILD.md](./doc/BUILD.md)
 
-### Notes
-1.Code Struct of Irrlicht
+### 2 New Functions
+- [x] Form video streaming locally  H.264
+- [x] Stream with webrtc. 
+
+### 3 New API Added
+
+Below part is not finished yet. So some functions cannot receive parameters.
+
+1. **recordScreen**
+
+   If you want to record the game to a video,
+
+   please use this api after every drawing,
+
+   ```c++
+   smgr->drawAll();
+   video->recordScreen();
+   ```
+
+2. **publish**
+
+   ```c++
+   smgr->drawAll();
+   video->publish();
+   ```
+
+   
+
+
+
+Thanks a lot for [Paul-Louis Ageneau](https://github.com/paullouisageneau), he helps us a lot about of webrtc.
+

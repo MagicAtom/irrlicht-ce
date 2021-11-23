@@ -314,7 +314,7 @@
 					/usr/local/Cellar/ffmpeg/4.4_2/include,
 					/usr/local/Cellar/ffmpeg/4.4_2/lib,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.irrlicht.$(PRODUCT_NAME:rfc1034identifier)";
@@ -368,7 +368,7 @@
 					/usr/local/Cellar/ffmpeg/4.4_2/include,
 					/usr/local/Cellar/ffmpeg/4.4_2/lib,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.irrlicht.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
