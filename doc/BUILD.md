@@ -14,9 +14,9 @@ And you should adjust the header file and lib file of ffmpeg. Also, some static 
 
 <img src="./pic/bs_macos.png" style="zoom:33%;" />
 
-**Please link these static libraries. And for the libavfilter etc., they are in the /usr/local/Cellar/ffmpeg/4.4_2/lib, and /usr/local/Cellar/ffmpeg/4.4_2 is where I installed the ffmpeg.**
+**Please link these dynamic libraries. And for the libavfilter etc., they are in the /usr/local/Cellar/ffmpeg/4.4_2/lib, and /usr/local/Cellar/ffmpeg/4.4_2 is where I installed the ffmpeg.**
 
 <img src="./pic/bp_macos.png" style="zoom:33%;" />
 
-And if you wanna test the new function, please open the /examples/02.Quake3Map/Quake3Map.xcodeproj,  it will record the game to a video which names "output.h264".
+And if you wanna test the new function, please open the /examples/02.Quake3Map/Quake3Map.xcodeproj,  , please also add the dynamic libraries. It will record the game to a video which names "output.h264".
 
