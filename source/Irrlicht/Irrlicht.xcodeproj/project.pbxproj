@@ -13,6 +13,43 @@
 		2C4557CD274D0895004A5006 /* libavformat.58.76.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4557C7274D0894004A5006 /* libavformat.58.76.100.dylib */; };
 		2C4557CE274D0895004A5006 /* libavfilter.7.110.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4557C8274D0894004A5006 /* libavfilter.7.110.100.dylib */; };
 		2C4557CF274D0895004A5006 /* libavutil.56.70.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4557C9274D0895004A5006 /* libavutil.56.70.100.dylib */; };
+		2C45581C274D1DBB004A5006 /* libdatachannel.0.15.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C45581B274D1DBB004A5006 /* libdatachannel.0.15.5.dylib */; };
+		2C45583D274D1E1C004A5006 /* rtppacketizer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C45581E274D1E1C004A5006 /* rtppacketizer.hpp */; };
+		2C45583E274D1E1C004A5006 /* global.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C45581F274D1E1C004A5006 /* global.hpp */; };
+		2C45583F274D1E1C004A5006 /* websocket.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455820274D1E1C004A5006 /* websocket.hpp */; };
+		2C455840274D1E1C004A5006 /* mediahandlerelement.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455821274D1E1C004A5006 /* mediahandlerelement.hpp */; };
+		2C455841274D1E1C004A5006 /* rtcpsrreporter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455822274D1E1C004A5006 /* rtcpsrreporter.hpp */; };
+		2C455842274D1E1C004A5006 /* opuspacketizationhandler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455823274D1E1C004A5006 /* opuspacketizationhandler.hpp */; };
+		2C455843274D1E1C004A5006 /* mediahandlerrootelement.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455824274D1E1C004A5006 /* mediahandlerrootelement.hpp */; };
+		2C455844274D1E1C004A5006 /* rtcpreceivingsession.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455825274D1E1C004A5006 /* rtcpreceivingsession.hpp */; };
+		2C455845274D1E1C004A5006 /* rtcpnackresponder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455826274D1E1C004A5006 /* rtcpnackresponder.hpp */; };
+		2C455846274D1E1C004A5006 /* rtc.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455827274D1E1C004A5006 /* rtc.hpp */; };
+		2C455847274D1E1C004A5006 /* h264packetizationhandler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455828274D1E1C004A5006 /* h264packetizationhandler.hpp */; };
+		2C455848274D1E1C004A5006 /* rtp.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455829274D1E1C004A5006 /* rtp.hpp */; };
+		2C455849274D1E1C004A5006 /* configuration.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C45582A274D1E1C004A5006 /* configuration.hpp */; };
+		2C45584A274D1E1C004A5006 /* track.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C45582B274D1E1C004A5006 /* track.hpp */; };
+		2C45584B274D1E1C004A5006 /* h264rtppacketizer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C45582C274D1E1C004A5006 /* h264rtppacketizer.hpp */; };
+		2C45584C274D1E1C004A5006 /* channel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C45582D274D1E1C004A5006 /* channel.hpp */; };
+		2C45584D274D1E1C004A5006 /* candidate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C45582E274D1E1C004A5006 /* candidate.hpp */; };
+		2C45584E274D1E1C004A5006 /* rtppacketizationconfig.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C45582F274D1E1C004A5006 /* rtppacketizationconfig.hpp */; };
+		2C45584F274D1E1C004A5006 /* mediachainablehandler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455830274D1E1C004A5006 /* mediachainablehandler.hpp */; };
+		2C455850274D1E1C004A5006 /* websocketserver.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455831274D1E1C004A5006 /* websocketserver.hpp */; };
+		2C455851274D1E1C004A5006 /* rtc.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C455832274D1E1C004A5006 /* rtc.h */; };
+		2C455852274D1E1C004A5006 /* datachannel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455833274D1E1C004A5006 /* datachannel.hpp */; };
+		2C455853274D1E1C004A5006 /* description.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455834274D1E1C004A5006 /* description.hpp */; };
+		2C455854274D1E1C004A5006 /* nalunit.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455835274D1E1C004A5006 /* nalunit.hpp */; };
+		2C455855274D1E1C004A5006 /* peerconnection.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455836274D1E1C004A5006 /* peerconnection.hpp */; };
+		2C455856274D1E1C004A5006 /* common.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455837274D1E1C004A5006 /* common.hpp */; };
+		2C455857274D1E1C004A5006 /* utils.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455838274D1E1C004A5006 /* utils.hpp */; };
+		2C455858274D1E1C004A5006 /* mediahandler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455839274D1E1C004A5006 /* mediahandler.hpp */; };
+		2C455859274D1E1C004A5006 /* message.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C45583A274D1E1C004A5006 /* message.hpp */; };
+		2C45585A274D1E1C004A5006 /* reliability.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C45583B274D1E1C004A5006 /* reliability.hpp */; };
+		2C45585B274D1E1C004A5006 /* opusrtppacketizer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C45583C274D1E1C004A5006 /* opusrtppacketizer.hpp */; };
+		2C455904274D2683004A5006 /* IDispatchQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C455903274D2683004A5006 /* IDispatchQueue.h */; };
+		2C455906274D26AF004A5006 /* IH264FileParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C455905274D26AF004A5006 /* IH264FileParser.h */; };
+		2C455908274D26C5004A5006 /* IRtcHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C455907274D26C5004A5006 /* IRtcHelpers.h */; };
+		2C45590A274D26D9004A5006 /* IStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C455909274D26D9004A5006 /* IStream.h */; };
+		2C45590C274D4159004A5006 /* json.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C45590B274D4159004A5006 /* json.hpp */; };
 		2C9301F5274BE71F004902B8 /* IEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9301F4274BE71F004902B8 /* IEncoder.h */; };
 		2C930293274C7BD2004902B8 /* IStreamer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C930292274C7BD2004902B8 /* IStreamer.h */; };
 		5E34C9F91B7F6EBF00F212E8 /* CDefaultGUIElementFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E34C7E21B7F50DE00F212E8 /* CDefaultGUIElementFactory.cpp */; };
@@ -325,6 +362,44 @@
 		2C4557C7274D0894004A5006 /* libavformat.58.76.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.58.76.100.dylib; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavformat.58.76.100.dylib; sourceTree = "<group>"; };
 		2C4557C8274D0894004A5006 /* libavfilter.7.110.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavfilter.7.110.100.dylib; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavfilter.7.110.100.dylib; sourceTree = "<group>"; };
 		2C4557C9274D0895004A5006 /* libavutil.56.70.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.56.70.100.dylib; path = ../../../../../../../usr/local/Cellar/ffmpeg/4.4_2/lib/libavutil.56.70.100.dylib; sourceTree = "<group>"; };
+		2C45581B274D1DBB004A5006 /* libdatachannel.0.15.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdatachannel.0.15.5.dylib; path = ../../lib/webrtc/libdatachannel.0.15.5.dylib; sourceTree = "<group>"; };
+		2C45581E274D1E1C004A5006 /* rtppacketizer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtppacketizer.hpp; sourceTree = "<group>"; };
+		2C45581F274D1E1C004A5006 /* global.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = global.hpp; sourceTree = "<group>"; };
+		2C455820274D1E1C004A5006 /* websocket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = websocket.hpp; sourceTree = "<group>"; };
+		2C455821274D1E1C004A5006 /* mediahandlerelement.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mediahandlerelement.hpp; sourceTree = "<group>"; };
+		2C455822274D1E1C004A5006 /* rtcpsrreporter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtcpsrreporter.hpp; sourceTree = "<group>"; };
+		2C455823274D1E1C004A5006 /* opuspacketizationhandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = opuspacketizationhandler.hpp; sourceTree = "<group>"; };
+		2C455824274D1E1C004A5006 /* mediahandlerrootelement.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mediahandlerrootelement.hpp; sourceTree = "<group>"; };
+		2C455825274D1E1C004A5006 /* rtcpreceivingsession.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtcpreceivingsession.hpp; sourceTree = "<group>"; };
+		2C455826274D1E1C004A5006 /* rtcpnackresponder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtcpnackresponder.hpp; sourceTree = "<group>"; };
+		2C455827274D1E1C004A5006 /* rtc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtc.hpp; sourceTree = "<group>"; };
+		2C455828274D1E1C004A5006 /* h264packetizationhandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = h264packetizationhandler.hpp; sourceTree = "<group>"; };
+		2C455829274D1E1C004A5006 /* rtp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtp.hpp; sourceTree = "<group>"; };
+		2C45582A274D1E1C004A5006 /* configuration.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = configuration.hpp; sourceTree = "<group>"; };
+		2C45582B274D1E1C004A5006 /* track.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = track.hpp; sourceTree = "<group>"; };
+		2C45582C274D1E1C004A5006 /* h264rtppacketizer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = h264rtppacketizer.hpp; sourceTree = "<group>"; };
+		2C45582D274D1E1C004A5006 /* channel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = channel.hpp; sourceTree = "<group>"; };
+		2C45582E274D1E1C004A5006 /* candidate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = candidate.hpp; sourceTree = "<group>"; };
+		2C45582F274D1E1C004A5006 /* rtppacketizationconfig.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rtppacketizationconfig.hpp; sourceTree = "<group>"; };
+		2C455830274D1E1C004A5006 /* mediachainablehandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mediachainablehandler.hpp; sourceTree = "<group>"; };
+		2C455831274D1E1C004A5006 /* websocketserver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = websocketserver.hpp; sourceTree = "<group>"; };
+		2C455832274D1E1C004A5006 /* rtc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtc.h; sourceTree = "<group>"; };
+		2C455833274D1E1C004A5006 /* datachannel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = datachannel.hpp; sourceTree = "<group>"; };
+		2C455834274D1E1C004A5006 /* description.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = description.hpp; sourceTree = "<group>"; };
+		2C455835274D1E1C004A5006 /* nalunit.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = nalunit.hpp; sourceTree = "<group>"; };
+		2C455836274D1E1C004A5006 /* peerconnection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = peerconnection.hpp; sourceTree = "<group>"; };
+		2C455837274D1E1C004A5006 /* common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
+		2C455838274D1E1C004A5006 /* utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = utils.hpp; sourceTree = "<group>"; };
+		2C455839274D1E1C004A5006 /* mediahandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mediahandler.hpp; sourceTree = "<group>"; };
+		2C45583A274D1E1C004A5006 /* message.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = message.hpp; sourceTree = "<group>"; };
+		2C45583B274D1E1C004A5006 /* reliability.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = reliability.hpp; sourceTree = "<group>"; };
+		2C45583C274D1E1C004A5006 /* opusrtppacketizer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = opusrtppacketizer.hpp; sourceTree = "<group>"; };
+		2C4558FE274D20B3004A5006 /* libssl.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.1.1.dylib; path = "../../../../../../../usr/local/Cellar/openssl@1.1/1.1.1l/lib/libssl.1.1.dylib"; sourceTree = "<group>"; };
+		2C455903274D2683004A5006 /* IDispatchQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IDispatchQueue.h; path = ../../include/IDispatchQueue.h; sourceTree = "<group>"; };
+		2C455905274D26AF004A5006 /* IH264FileParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IH264FileParser.h; path = ../../include/IH264FileParser.h; sourceTree = "<group>"; };
+		2C455907274D26C5004A5006 /* IRtcHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IRtcHelpers.h; path = ../../include/IRtcHelpers.h; sourceTree = "<group>"; };
+		2C455909274D26D9004A5006 /* IStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IStream.h; path = ../../include/IStream.h; sourceTree = "<group>"; };
+		2C45590B274D4159004A5006 /* json.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = json.hpp; path = ../../include/json.hpp; sourceTree = "<group>"; };
 		2C9301F4274BE71F004902B8 /* IEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IEncoder.h; path = ../../include/IEncoder.h; sourceTree = "<group>"; };
 		2C930232274BF22F004902B8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2C930234274BF23A004902B8 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
@@ -1076,6 +1151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C45581C274D1DBB004A5006 /* libdatachannel.0.15.5.dylib in Frameworks */,
 				2C4557CA274D0895004A5006 /* libavdevice.58.13.100.dylib in Frameworks */,
 				2C4557CB274D0895004A5006 /* libswscale.5.9.100.dylib in Frameworks */,
 				2C4557CC274D0895004A5006 /* libavcodec.58.134.100.dylib in Frameworks */,
@@ -1088,16 +1164,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C930294274C7C41004902B8 /* librtc */ = {
+		2C45581D274D1E1C004A5006 /* rtc */ = {
 			isa = PBXGroup;
 			children = (
+				2C45581E274D1E1C004A5006 /* rtppacketizer.hpp */,
+				2C45581F274D1E1C004A5006 /* global.hpp */,
+				2C455820274D1E1C004A5006 /* websocket.hpp */,
+				2C455821274D1E1C004A5006 /* mediahandlerelement.hpp */,
+				2C455822274D1E1C004A5006 /* rtcpsrreporter.hpp */,
+				2C455823274D1E1C004A5006 /* opuspacketizationhandler.hpp */,
+				2C455824274D1E1C004A5006 /* mediahandlerrootelement.hpp */,
+				2C455825274D1E1C004A5006 /* rtcpreceivingsession.hpp */,
+				2C455826274D1E1C004A5006 /* rtcpnackresponder.hpp */,
+				2C455827274D1E1C004A5006 /* rtc.hpp */,
+				2C455828274D1E1C004A5006 /* h264packetizationhandler.hpp */,
+				2C455829274D1E1C004A5006 /* rtp.hpp */,
+				2C45582A274D1E1C004A5006 /* configuration.hpp */,
+				2C45582B274D1E1C004A5006 /* track.hpp */,
+				2C45582C274D1E1C004A5006 /* h264rtppacketizer.hpp */,
+				2C45582D274D1E1C004A5006 /* channel.hpp */,
+				2C45582E274D1E1C004A5006 /* candidate.hpp */,
+				2C45582F274D1E1C004A5006 /* rtppacketizationconfig.hpp */,
+				2C455830274D1E1C004A5006 /* mediachainablehandler.hpp */,
+				2C455831274D1E1C004A5006 /* websocketserver.hpp */,
+				2C455832274D1E1C004A5006 /* rtc.h */,
+				2C455833274D1E1C004A5006 /* datachannel.hpp */,
+				2C455834274D1E1C004A5006 /* description.hpp */,
+				2C455835274D1E1C004A5006 /* nalunit.hpp */,
+				2C455836274D1E1C004A5006 /* peerconnection.hpp */,
+				2C455837274D1E1C004A5006 /* common.hpp */,
+				2C455838274D1E1C004A5006 /* utils.hpp */,
+				2C455839274D1E1C004A5006 /* mediahandler.hpp */,
+				2C45583A274D1E1C004A5006 /* message.hpp */,
+				2C45583B274D1E1C004A5006 /* reliability.hpp */,
+				2C45583C274D1E1C004A5006 /* opusrtppacketizer.hpp */,
 			);
-			name = librtc;
+			name = rtc;
+			path = ../../include/rtc;
 			sourceTree = "<group>";
 		};
 		2C9AF96E274B3E3700FDCA73 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C4558FE274D20B3004A5006 /* libssl.1.1.dylib */,
+				2C45581B274D1DBB004A5006 /* libdatachannel.0.15.5.dylib */,
 				2C4557C6274D0894004A5006 /* libavcodec.58.134.100.dylib */,
 				2C4557C4274D0894004A5006 /* libavdevice.58.13.100.dylib */,
 				2C4557C8274D0894004A5006 /* libavfilter.7.110.100.dylib */,
@@ -1140,7 +1250,7 @@
 		5E34C6DF1B7F4AB500F212E8 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				2C930294274C7C41004902B8 /* librtc */,
+				2C45581D274D1E1C004A5006 /* rtc */,
 				5E34C79F1B7F4B9400F212E8 /* core */,
 				5E34C7A31B7F4C2100F212E8 /* gui */,
 				5E34C7A11B7F4BF000F212E8 /* io */,
@@ -1321,6 +1431,7 @@
 		5E34C7A21B7F4C1900F212E8 /* video */ = {
 			isa = PBXGroup;
 			children = (
+				2C45590B274D4159004A5006 /* json.hpp */,
 				2C930292274C7BD2004902B8 /* IStreamer.h */,
 				2C9301F4274BE71F004902B8 /* IEncoder.h */,
 				5E34C6EE1B7F4AFB00F212E8 /* EDriverFeatures.h */,
@@ -1347,6 +1458,10 @@
 				5E34C7901B7F4AFC00F212E8 /* SMaterial.h */,
 				5E34C7911B7F4AFC00F212E8 /* SMaterialLayer.h */,
 				5E34C7991B7F4AFC00F212E8 /* SVertexIndex.h */,
+				2C455903274D2683004A5006 /* IDispatchQueue.h */,
+				2C455905274D26AF004A5006 /* IH264FileParser.h */,
+				2C455907274D26C5004A5006 /* IRtcHelpers.h */,
+				2C455909274D26D9004A5006 /* IStream.h */,
 			);
 			name = video;
 			sourceTree = "<group>";
@@ -2148,10 +2263,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C930293274C7BD2004902B8 /* IStreamer.h in Headers */,
+				2C455845274D1E1C004A5006 /* rtcpnackresponder.hpp in Headers */,
+				2C455842274D1E1C004A5006 /* opuspacketizationhandler.hpp in Headers */,
+				2C45584A274D1E1C004A5006 /* track.hpp in Headers */,
+				2C45590A274D26D9004A5006 /* IStream.h in Headers */,
+				2C45584F274D1E1C004A5006 /* mediachainablehandler.hpp in Headers */,
+				2C455846274D1E1C004A5006 /* rtc.hpp in Headers */,
+				2C45583D274D1E1C004A5006 /* rtppacketizer.hpp in Headers */,
+				2C455856274D1E1C004A5006 /* common.hpp in Headers */,
+				2C45584C274D1E1C004A5006 /* channel.hpp in Headers */,
+				2C455851274D1E1C004A5006 /* rtc.h in Headers */,
+				2C455849274D1E1C004A5006 /* configuration.hpp in Headers */,
+				2C45584D274D1E1C004A5006 /* candidate.hpp in Headers */,
+				2C45583F274D1E1C004A5006 /* websocket.hpp in Headers */,
+				2C455848274D1E1C004A5006 /* rtp.hpp in Headers */,
+				2C455858274D1E1C004A5006 /* mediahandler.hpp in Headers */,
+				2C455844274D1E1C004A5006 /* rtcpreceivingsession.hpp in Headers */,
+				2C455855274D1E1C004A5006 /* peerconnection.hpp in Headers */,
+				2C455857274D1E1C004A5006 /* utils.hpp in Headers */,
+				2C455841274D1E1C004A5006 /* rtcpsrreporter.hpp in Headers */,
+				2C45583E274D1E1C004A5006 /* global.hpp in Headers */,
+				2C455850274D1E1C004A5006 /* websocketserver.hpp in Headers */,
+				2C455853274D1E1C004A5006 /* description.hpp in Headers */,
 				5E8570BD1B7F9AC400B267D2 /* CIrrDeviceConsole.h in Headers */,
+				2C455854274D1E1C004A5006 /* nalunit.hpp in Headers */,
+				2C455847274D1E1C004A5006 /* h264packetizationhandler.hpp in Headers */,
 				5E7908961C10EEC000DFE7FE /* COpenGLCommon.h in Headers */,
 				5E7908951C10EEC000DFE7FE /* COpenGLCacheHandler.h in Headers */,
+				2C455843274D1E1C004A5006 /* mediahandlerrootelement.hpp in Headers */,
+				2C45590C274D4159004A5006 /* json.hpp in Headers */,
+				2C455859274D1E1C004A5006 /* message.hpp in Headers */,
+				2C455840274D1E1C004A5006 /* mediahandlerelement.hpp in Headers */,
+				2C45585B274D1E1C004A5006 /* opusrtppacketizer.hpp in Headers */,
+				2C455906274D26AF004A5006 /* IH264FileParser.h in Headers */,
+				2C455852274D1E1C004A5006 /* datachannel.hpp in Headers */,
+				2C455908274D26C5004A5006 /* IRtcHelpers.h in Headers */,
+				2C45584E274D1E1C004A5006 /* rtppacketizationconfig.hpp in Headers */,
+				2C455904274D2683004A5006 /* IDispatchQueue.h in Headers */,
 				2C9301F5274BE71F004902B8 /* IEncoder.h in Headers */,
+				2C45585A274D1E1C004A5006 /* reliability.hpp in Headers */,
+				2C45584B274D1E1C004A5006 /* h264rtppacketizer.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,6 +20,7 @@
 #include "SExposedVideoData.h"
 #include "SOverrideMaterial.h"
 #include "IEncoder.h"
+#include "IStreamer.h"
 
 namespace irr
 {
@@ -50,6 +51,7 @@ namespace video
 	class IGPUProgrammingServices;
 	class IRenderTarget;
     class IEncoder;
+    class IRTCStreamer;
 	//! enumeration for geometry transformation states
 	enum E_TRANSFORMATION_STATE
 	{
@@ -169,6 +171,7 @@ namespace video
 	{
     protected:
         IEncoder* encoder;
+        IRTCStreamer* streamer;
 	public:
 
 		//! Applications must call this method before performing any rendering.
@@ -579,13 +582,28 @@ namespace video
             image->drop();
         }
         
-        //! create a new streamer
-        void publish(){
-            
-        }
-        
         void destroyEncoder(){
             encoder->EndEncode();
+        }
+        
+        void createStreamer(std::string ip_addr,int port)
+        {
+            streamer = new IRTCStreamer(ip_addr,port);
+            streamer->setUp();
+        }
+        
+        //! create a new streamer
+        void publish(){
+            uint8_t* ret_buf;
+            int ret_buf_size = 0;
+            IImage* image = createScreenShot();
+            encoder->GenOnePkt(image->getImageData(), &ret_buf, ret_buf_size);
+            streamer->publish(ret_buf,ret_buf_size);
+            image->drop();
+        }
+        
+        void dropStreamer(){
+            delete streamer;
         }
         
 		//! Sets a new render target.
