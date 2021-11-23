@@ -247,7 +247,7 @@ int main()
 
 		smgr->drawAll();
 		guienv->drawAll();
-
+        driver->recordScreen();
 		driver->endScene();
 	}
 

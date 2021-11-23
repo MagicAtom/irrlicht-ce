@@ -167,6 +167,8 @@ namespace video
 	*/
 	class IVideoDriver : public virtual IReferenceCounted
 	{
+    private:
+        IEncoder* encoder;
 	public:
 
 		//! Applications must call this method before performing any rendering.
@@ -560,7 +562,26 @@ namespace video
 		\return True if successful and false if not. */
 		virtual bool setRenderTarget(ITexture* texture, u16 clearFlag=ECBF_COLOR|ECBF_DEPTH, SColor clearColor = SColor(255,0,0,0),
 			f32 clearDepth = 1.f, u8 clearStencil = 0) = 0;
-
+        
+        //! this is a debug function to test IEncoder
+        void recordScreen()
+        {
+            uint8_t* ret_buf;
+            int ret_buf_size = 0;
+            IImage* image = createScreenShot();
+            if(encoder == nullptr){
+                core::dimension2d<u32> screenSize = this->getScreenSize();
+                encoder = new IEncoder(screenSize);
+                encoder->Init();
+            }
+            encoder->GenOnePkt(image->getImageData(), &ret_buf, ret_buf_size);
+        }
+        
+        //! create a new streamer
+        void publish(){
+            
+        }
+        
 		//! Sets a new render target.
 		//! Prefer to use the setRenderTarget function taking flags as parameter as this one can't clear the stencil buffer.
 		//! It's still offered for backward compatibility.

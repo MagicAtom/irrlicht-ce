@@ -177,6 +177,12 @@ public:
 	{
 		return Data;
 	}
+    
+    //! Get unit8_t data
+    u8* getImageData() const
+    {
+        return Data;
+    }
 
 	//! Lock function. Use this to get a pointer to the image data.
 	/** Use getData instead.

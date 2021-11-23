@@ -153,14 +153,7 @@ int main()
 		{
 			driver->beginScene(video::ECBF_COLOR | video::ECBF_DEPTH, video::SColor(255,200,200,200));
 			smgr->drawAll();
-            
-                video::IImage* image = device->getVideoDriver()->createScreenShot();
-                if(image){
-                    //device->getVideoDriver()->writeImageToFile(image, "/Users/songtingyu/Desktop/test.png");
-                    image->drop();
-                    //printf("I don't know what happend.\n");
-                }
-            
+            driver->recordScreen();
 			driver->endScene();
             
 			int fps = driver->getFPS();
