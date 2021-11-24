@@ -9,7 +9,6 @@
 #define __IRR_I_H264_FILE_PARSER_H
 
 #include <optional>
-#include <rtc/rtc.hpp>
 #include "IStream.h"
 #ifdef _WIN32
 #include <winsock2.h>

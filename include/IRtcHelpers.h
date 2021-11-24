@@ -102,12 +102,6 @@ struct ClientTrack {
     }
 };
 
-uint64_t currentTimeInMicroSeconds(){
-    struct timeval time;
-    gettimeofday(&time, NULL);
-    return uint64_t(time.tv_sec) * 1000 * 1000 + time.tv_usec;
-}
-
 }
 }
 

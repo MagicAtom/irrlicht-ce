@@ -591,7 +591,7 @@ namespace video
             streamer = new IRTCStreamer(ip_addr,port);
             streamer->setUp();
         }
-        
+
         //! create a new streamer
         void publish(){
             uint8_t* ret_buf;
@@ -601,7 +601,7 @@ namespace video
             streamer->publish(ret_buf,ret_buf_size);
             image->drop();
         }
-        
+
         void dropStreamer(){
             delete streamer;
         }

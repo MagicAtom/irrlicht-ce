@@ -20,20 +20,26 @@ Below part is not finished yet. So some functions cannot receive parameters.
    please use this api after every drawing,
 
    ```c++
-   smgr->drawAll();
-   video->recordScreen();
+   video->createEncoder();
+   while(){
+     smgr->drawAll();
+   	video->recordScreen();
+   }
+   video->dropEncoder();
    ```
 
 2. **publish**
 
    ```c++
-   smgr->drawAll();
-   video->publish();
+   video->createStreamer();
+   while(){
+     smgr->drawAll();
+     video->publish();
+   }
+   video->dropStreamer();
    ```
-
    
-
-
+   
 
 Thanks a lot for [Paul-Louis Ageneau](https://github.com/paullouisageneau), he helps us a lot about of webrtc.
 

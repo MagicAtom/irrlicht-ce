@@ -9,8 +9,8 @@
 #define __IRR_I_STREAM_H
 
 #include "IDispatchQueue.h"
-#include "IRtcHelpers.h"
 #include "rtc/rtc.hpp"
+#include "IRtcHelpers.h"
 #include <ctime>
 
 namespace irr{
@@ -95,6 +95,11 @@ public:
             return;
         }
         _isRunning = true;
+        auto currentTimeInMicroSeconds = [](){
+                struct timeval time;
+                gettimeofday(&time, NULL);
+                return uint64_t(time.tv_sec) * 1000 * 1000 + time.tv_usec;
+        };
         startTime = currentTimeInMicroSeconds();
         video->start();
     };

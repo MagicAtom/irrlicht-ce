@@ -8,10 +8,9 @@
 #ifndef __IRR_I_RTC_STREAMER_H
 #define __IRR_I_RTC_STREAMER_H
 
-#include "rtc/rtc.hpp"
+#include "nlohmann/json.hpp"
 #include "IH264FileParser.h"
 #include "IRtcHelpers.h"
-#include "json.hpp"
 #include <memory>
 
 namespace irr{
@@ -236,7 +235,11 @@ protected:
         assert(client->video.has_value());
 
         auto video = client->video.value();
-
+        auto currentTimeInMicroSeconds = [](){
+                struct timeval time;
+                gettimeofday(&time, NULL);
+                return uint64_t(time.tv_sec) * 1000 * 1000 + time.tv_usec;
+        };
         auto currentTime_us = double(currentTimeInMicroSeconds());
         auto currentTime_s = currentTime_us / (1000 * 1000);
 
