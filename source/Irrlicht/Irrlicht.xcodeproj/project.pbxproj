@@ -18,6 +18,7 @@
 		2C45584F274D1E1C004A5006 /* mediachainablehandler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C455830274D1E1C004A5006 /* mediachainablehandler.hpp */; };
 		2C45590F274DBF64004A5006 /* json.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2C45590E274DBF64004A5006 /* json.hpp */; };
 		2C7186A1274DC22C00B6F527 /* CIrrDeviceConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E8570BB1B7F9AC400B267D2 /* CIrrDeviceConsole.h */; };
+		2C7186A7274F12D700B6F527 /* IRtcHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C455907274D26C5004A5006 /* IRtcHelpers.h */; };
 		5E34C9F91B7F6EBF00F212E8 /* CDefaultGUIElementFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E34C7E21B7F50DE00F212E8 /* CDefaultGUIElementFactory.cpp */; };
 		5E34C9FB1B7F6EBF00F212E8 /* CGUIButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E34C7A91B7F50A900F212E8 /* CGUIButton.cpp */; };
 		5E34C9FD1B7F6EBF00F212E8 /* CGUICheckBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E34C7AB1B7F50A900F212E8 /* CGUICheckBox.cpp */; };
@@ -2202,6 +2203,7 @@
 				5E7908961C10EEC000DFE7FE /* COpenGLCommon.h in Headers */,
 				5E7908951C10EEC000DFE7FE /* COpenGLCacheHandler.h in Headers */,
 				2C45590F274DBF64004A5006 /* json.hpp in Headers */,
+				2C7186A7274F12D700B6F527 /* IRtcHelpers.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

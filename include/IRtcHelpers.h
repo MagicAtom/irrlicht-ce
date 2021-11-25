@@ -24,7 +24,7 @@ struct timezone {
     int tz_dsttime;
 };
 
-int gettimeofday(struct timeval *tv, struct timezone *tz)
+static int gettimeofday(struct timeval *tv, struct timezone *tz)
 {
     if (tv) {
         FILETIME               filetime; /* 64-bit value representing the number of 100-nanosecond intervals since January 1, 1601 00:00 UTC */
