@@ -586,26 +586,26 @@ namespace video
             encoder->EndEncode();
         }
         
-        void createStreamer(std::string ip_addr,int port)
-        {
-            streamer = new IRTCStreamer(ip_addr,port);
-            streamer->setUp();
-        }
-
-        //! create a new streamer
-        void publish(){
-            uint8_t* ret_buf;
-            int ret_buf_size = 0;
-            IImage* image = createScreenShot();
-            encoder->GenOnePkt(image->getImageData(), &ret_buf, ret_buf_size);
-            streamer->publish(ret_buf,ret_buf_size);
-            image->drop();
-        }
-
-        void dropStreamer(){
-            delete streamer;
-        }
-        
+//        void createStreamer(std::string ip_addr,int port)
+//        {
+//            streamer = new IRTCStreamer(ip_addr,port);
+//            streamer->setUp();
+//        }
+//
+//        //! create a new streamer
+//        void publish(){
+//            uint8_t* ret_buf;
+//            int ret_buf_size = 0;
+//            IImage* image = createScreenShot();
+//            encoder->GenOnePkt(image->getImageData(), &ret_buf, ret_buf_size);
+//            streamer->publish(ret_buf,ret_buf_size);
+//            image->drop();
+//        }
+//
+//        void dropStreamer(){
+//            delete streamer;
+//        }
+//
 		//! Sets a new render target.
 		//! Prefer to use the setRenderTarget function taking flags as parameter as this one can't clear the stencil buffer.
 		//! It's still offered for backward compatibility.

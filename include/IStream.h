@@ -13,8 +13,6 @@
 #include "IRtcHelpers.h"
 #include <ctime>
 
-namespace irr{
-namespace video{
 #ifdef _WIN32
 // taken from https://stackoverflow.com/questions/5801813/c-usleep-is-obsolete-workarounds-for-windows-mingw
 #include <windows.h>
@@ -34,6 +32,10 @@ void usleep(__int64 usec)
 #else
 #include <unistd.h>
 #endif
+
+namespace irr{
+namespace video{
+
 class StreamSource {
 protected:
     uint64_t sampleTime_us = 0;
