@@ -2,21 +2,29 @@
 
 This is a tutorial on how to build the engine on different platforms.
 
+### Set up
 
+```bash
+git submodule update --init -recursive
+```
 
 ### 1 MacOS
 
-Please open the source/Irrlicht/Irrlicht.xcodeproj.
+If you wanna help me to debug my CMakeLists.txt, just run below commands in the source directory.
 
-And you should adjust the header file and lib file of ffmpeg. Also, some static library should be pointed out.
+```bash
+cmake -B build
+make -j4
+```
 
-**Please note the Search Paths, you should adjust it according to where you install the ffmpeg**
+**And the recommended way is to open the xcodeproj in the source directory.** Please add ffmpeg dynamic library to the project you want to build. Also you should build the libdatachannel.dylib and add to the project.
 
-<img src="./pic/bs_macos.png" style="zoom:33%;" />
+### 2 Linux
 
-**Please link these dynamic libraries. And for the libavfilter etc., they are in the /usr/local/Cellar/ffmpeg/4.4_2/lib, and /usr/local/Cellar/ffmpeg/4.4_2 is where I installed the ffmpeg.**
+For linux version, you can directly go to this library I made, which is more light-weighted and controlled by cmake.
 
-<img src="./pic/bp_macos.png" style="zoom:33%;" />
+[Irrlicht with cmake on linux](https://github.com/MagicAtom/Irrlicht.git)
 
-And if you wanna test the new function, please open the /examples/02.Quake3Map/Quake3Map.xcodeproj,  , please also add the dynamic libraries. It will record the game to a video which names "output.h264".
+### 3 Windows
 
+the code is verified to run on windows. But I do not have a windows laptop to test, so I didn't add the instructions here.

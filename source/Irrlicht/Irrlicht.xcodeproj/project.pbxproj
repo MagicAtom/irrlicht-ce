@@ -2632,6 +2632,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../include",
 					/usr/local/Cellar/ffmpeg/4.4_2/include,
+					"$(SRCROOT)/libdatachannel/include",
 				);
 				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/ffmpeg/4.4_2/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
@@ -2684,6 +2685,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../include",
 					/usr/local/Cellar/ffmpeg/4.4_2/include,
+					"$(SRCROOT)/libdatachannel/include",
 				);
 				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/ffmpeg/4.4_2/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
